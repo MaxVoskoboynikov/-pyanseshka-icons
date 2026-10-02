@@ -71,15 +71,14 @@
       padding: 30px;
     }
 
-    img {
-      width: 180px;
-      height: 180px;
-      border-radius: 36px;
-      margin-bottom: 25px;
+    h1 {
+      font-size: 32px;
+      margin: 0 0 12px;
     }
 
-    h1 {
-      font-size: 30px;
+    p {
+      color: #777;
+      font-size: 17px;
       margin: 0;
     }
   </style>
@@ -88,25 +87,21 @@
 <body>
 
   <div class="app">
-    <img
-      src="./apple-touch-icon.png"
-      alt="Пянсешка"
-    >
-
     <h1>Пянсешка</h1>
+    <p>Система ревизий</p>
   </div>
 
-<script>
-  const isStandalone =
-    window.navigator.standalone === true ||
-    window.matchMedia('(display-mode: standalone)').matches;
+  <script>
+    const isStandalone =
+      window.navigator.standalone === true ||
+      window.matchMedia('(display-mode: standalone)').matches;
 
-  if (isStandalone) {
-    window.location.replace(
-      'https://script.google.com/macros/s/AKfycbzMi9OtrEJZU7Uw1SxjLpPYdL664MANvYbwcFLZAMXzdOLmiJloMQxT1KR6Wl35-7Rp/exec'
-    );
-  }
-</script>
+    if (isStandalone) {
+      window.location.replace(
+        'https://script.google.com/macros/s/AKfycbzMi9OtrEJZU7Uw1SxjLpPYdL664MANvYbwcFLZAMXzdOLmiJloMQxT1KR6Wl35-7Rp/exec'
+      );
+    }
+  </script>
 
 </body>
 </html>
